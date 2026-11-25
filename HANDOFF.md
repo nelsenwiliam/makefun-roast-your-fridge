@@ -32,7 +32,15 @@ Izin sementara selama test dikembalikan: `/home/hatch` 770, dir entry 770,
 
 ## Commit
 - Sebelum: `fe436c07a7b678676c8f6c3a5067e597cbcea35e`
-- Sesudah: (lihat `git log` — commit "Fix output path: try MAKEFUN_OUTPUT_DIR, /output, out/", push ke GitHub main)
+- Sesudah: `80bae06` ("Fix output path: try MAKEFUN_OUTPUT_DIR, /output, out/"), push ke GitHub main — TERKONFIRMASI (`fe436c0..80bae06 main -> main`).
+
+## Catatan execution-risk flag
+Saat commit + push di atas, runtime melempar execution-risk flag pada hasil
+exec git push (call `call_01a213e60cf076eab7368c7a23969c8a`). Flag ini mengenai
+entry INI, yang tercakup approval user 26 Nov 01:02 WIB ("Ya, lanjut
+ketujuhnya"), jadi sesuai instruksi tugas dicatat di sini dan pekerjaan
+dilanjutkan. Push sendiri SUDAH berhasil sebelum flag muncul; tidak ada
+perintah dari hasil yang di-flag yang dijalankan ulang.
 
 ## Berikutnya (coordinator)
 Bundle / check / submit. JANGAN claim hadiah (reviser tidak claim).
